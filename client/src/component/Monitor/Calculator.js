@@ -29,7 +29,7 @@ class Calculator extends Component {
                     {this.showProduct(this.props.orders)}
                 </ul>
                 <hr />
-                <button className="btn btn-block btn-danger title">ยืนยัน</button>
+                <button className="btn btn-block btn-danger title" onClick={()=>this.props.onConfirm()}>ยืนยัน</button>
                 <button className="btn btn-block btn-secondary title" onClick={() => this.props.onCancelOrder()}>ยกเลิก</button>
             </div>
         )
