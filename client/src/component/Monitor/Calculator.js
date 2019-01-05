@@ -5,7 +5,7 @@ class Calculator extends Component {
 
     showProduct(orders) {
         if (!orders || orders.lenght === 0) {
-            
+            console.log("no order")
             return (<li className="text-right text-muted title">ไม่มีสินค้าค่ะ</li>)
             
         }
@@ -30,7 +30,7 @@ class Calculator extends Component {
                 </ul>
                 <hr />
                 <button className="btn btn-block btn-danger title">ยืนยัน</button>
-                <button className="btn btn-block btn-secondary title">ยกเลิก</button>
+                <button className="btn btn-block btn-secondary title" onClick={() => this.props.onCancelOrder()}>ยกเลิก</button>
             </div>
         )
     }
