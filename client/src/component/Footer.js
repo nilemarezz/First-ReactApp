@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Footer = ({name,email}) =>{
+const Footer = (
+
+) =>{
     return(
         <div className='container-fluid'>
                 <hr />
                 <div className='text-center title text-uppercase' >
                     <small>
-                        <span style={{color: 'red'}}> Name : {name}</span> | Email : <span>{email}</span>
+                        <span style={{color: 'red'}}> Name : Matas Paosriwong</span> | Email : <span>nilenon@Gmail.com</span>
                     </small>
                 </div>
             </div>

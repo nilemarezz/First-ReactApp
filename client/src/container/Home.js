@@ -43,7 +43,7 @@ class Home extends Component {
       <div >
         <Header  />
         <Monitor products={this.state.products} />
-        <Footer name='Matas Paosriwong' email='nilenon@gmail.com' />
+        <Footer  />
       </div>
     );
   }

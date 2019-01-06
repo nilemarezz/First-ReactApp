@@ -44,7 +44,7 @@ class Order extends Component {
                         })}
 
                     </ul>
-                    <p className="title"> ยอกรวม {order.totalPrice}</p>
+                    <p className="title"> ยอดรวม {order.totalPrice}</p>
                 </div>
             )
         })
