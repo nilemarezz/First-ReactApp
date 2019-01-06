@@ -1,37 +1,37 @@
 {
   "products": [
     {
-      "productId": "P001",
+      "id": 1,
       "productName": "สลัดผัก",
       "unitPrice": "120",
       "thumbnail": "/images/product/1.jpg"
     },
     {
-      "productId": "P002",
+      "id": 2,
       "productName": "ไก่ทอด",
       "unitPrice": "90",
       "thumbnail": "/images/product/2.jpg"
     },
     {
-      "productId": "P003",
+      "id": 3,
       "productName": "บิงซู",
       "unitPrice": "200",
       "thumbnail": "/images/product/3.jpg"
     },
     {
-      "productId": "P004",
+      "id": 4,
       "productName": "เฟรนฟราย",
       "unitPrice": "140",
       "thumbnail": "/images/product/4.jpg"
     },
     {
-      "productId": "P005",
+      "id": 5,
       "productName": "เค้ก 3 ชั้น",
       "unitPrice": "200",
       "thumbnail": "/images/product/5.jpg"
     },
     {
-      "productId": "P006",
+      "id": 6,
       "productName": "กาแฟ เฮลตี้ฟู้ด",
       "unitPrice": "140",
       "thumbnail": "/images/product/6.jpg"
@@ -39,70 +39,29 @@
   ],
   "orders": [
     {
-      "orderDate": "2019-01-05T08:23:42.692Z",
-      "totalPrice": 210,
+      "orderDate": "2019-01-06T10:55:06.534Z",
+      "totalPrice": 340,
       "orders": [
         {
           "product": {
-            "productId": "P002",
-            "productName": "ไก่ทอด",
-            "unitPrice": "90",
-            "thumbnail": "/images/product/2.jpg"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "productId": "P001",
-            "productName": "สลัดผัก",
-            "unitPrice": "120",
-            "thumbnail": "/images/product/1.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 1
-    },
-    {
-      "orderDate": "2019-01-05T13:18:18.239Z",
-      "totalPrice": 140,
-      "orders": [
-        {
-          "product": {
-            "productId": "P004",
+            "id": 4,
             "productName": "เฟรนฟราย",
             "unitPrice": "140",
             "thumbnail": "/images/product/4.jpg"
           },
           "quantity": 1
-        }
-      ],
-      "id": 2
-    },
-    {
-      "orderDate": "2019-01-05T13:19:20.769Z",
-      "totalPrice": 340,
-      "orders": [
+        },
         {
           "product": {
-            "productId": "P003",
+            "id": 3,
             "productName": "บิงซู",
             "unitPrice": "200",
             "thumbnail": "/images/product/3.jpg"
           },
           "quantity": 1
-        },
-        {
-          "product": {
-            "productId": "P004",
-            "productName": "เฟรนฟราย",
-            "unitPrice": "140",
-            "thumbnail": "/images/product/4.jpg"
-          },
-          "quantity": 1
         }
       ],
-      "id": 3
+      "id": 1
     }
   ]
 }
