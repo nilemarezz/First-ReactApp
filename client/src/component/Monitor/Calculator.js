@@ -22,8 +22,8 @@ class Calculator extends Component {
 
     render() {
         return (
-            <div>
-                <h1 className='text-right'>{this.props.totalPrice}</h1>
+            <div >
+                <h1 className='text-right' style={{marginTop:'80px;'}}>{this.props.totalPrice}</h1>
                 <hr />
                 <ul className="list-unstyled">
                     {this.showProduct(this.props.orders)}

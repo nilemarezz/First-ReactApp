@@ -40,7 +40,7 @@ class Product extends Component {
                     <div className="row">
                         <div className="col-6">
 
-                            <h1>สินค้า</h1></div>
+                            <h1 style={{marginLeft:'650px'}}>สินค้า</h1></div>
                         <div className="col-6">
                             <button className="btn vtn-success title float-right" onClick={() => this.props.history.push('product/add')}>เพิ่ม</button>
                         </div>

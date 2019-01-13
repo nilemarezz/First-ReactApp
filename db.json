@@ -25,5 +25,22 @@
       "thumbnail": "/images/product/6.jpg"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "orderDate": "2019-01-13T07:06:12.745Z",
+      "totalPrice": 280,
+      "orders": [
+        {
+          "product": {
+            "id": 6,
+            "productName": "กาแฟ เฮลตี้ฟู้ด",
+            "unitPrice": "140",
+            "thumbnail": "/images/product/6.jpg"
+          },
+          "quantity": 2
+        }
+      ],
+      "id": 1
+    }
+  ]
 }

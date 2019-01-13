@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import './Header.css'
 
 class Header extends Component {
   constructor(props) {
@@ -8,45 +9,48 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    let navActive = false;
+    let nav_btn = document.querySelector('#nav-btn');
+    let nav = document.querySelector('#nav');
+    nav_btn.addEventListener('click',function () {
+        navActive = !navActive;
+        if (navActive){
+            nav.className ='active';
+        }
+        else{
+            nav.className ='';
+        }
+    })
   }
 
-  componentDidUpdate() {}
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    // this.state = {date : new Date()};
-    this.setState({ date: new Date() });
-  }
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-8 text-left">
-            <h1 className="text-success">
-              <img style={{ height: 70 }} src="/images/logo/logo.png" alt="" />{" "}
-              เฮลตี้ คาเฟ่{" "}
-            </h1>
+      <div>
+        <nav id="nav">
+          <div class="back-circle back-circle-1"></div>
+
+
+          <ul>
+            <li class="link link-1"><Link to="/">Home</Link></li>
+            <li class="link link-2"><Link to="/product">Product</Link></li>
+            <li class="link link-3"><Link to="/order">Orders</Link></li>
+            <li class="link link-4"><Link to="/about">About</Link></li>
+          </ul>
+          <div class="back-circle back-circle-2"></div>
+          <div class="back-circle back-circle-3"></div>
+          <div class="nav-btn" id="nav-btn">
+            <div class="nav-bars">
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
+            </div>
+
           </div>
-          <div className="col-md-4 text-right">
-            <h5 className="text-muted mt-4">
-              {this.state.date.toLocaleTimeString()}
-            </h5>
-            <ul className="list-inline">
-              <li className="list-inline-item title"><Link to="/">หน้าแรก </Link></li>
-              <li className="list-inline-item title"><Link to="/product">สินค้า</Link></li>
-              <li className="list-inline-item title"><Link to="/order">รายการสั่งซื้อ</Link></li>
-              <li className="list-inline-item title"><Link to="/about">เกี่ยวกับเรา</Link></li>
-            </ul>
-          </div>
-        </div>
-        <hr />
+
+        </nav>
       </div>
-    );
+    )
   }
 }
 
